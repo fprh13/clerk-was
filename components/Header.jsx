@@ -5,15 +5,17 @@ const Header = () => {
   const { userId } = auth();
 
   return (
-    <nav className="bg-red-900 py-4 px-8 fixed top-0 left-0 right-0 z-50">
+    <nav className="bg-blue-900 py-4 px-8 fixed top-0 left-0 right-0 z-50">
       <div className="max-w-screen-xl mx-auto">
         <div className="flex items-center justify-between container">
           <div className="flex items-center font-bold">
             <Link href="/">
-              <div className="text-lg text-white">Clerk Auth</div>
+              <div className="text-lg text-white">JYMJYM</div>
             </Link>
           </div>
-
+          {/* <Link href="/repos" className="text-gray-300 hover:text-white mr-4">
+            Repos
+          </Link> */}
           <div className="flex items-center font-bold">
             {!userId ? (
               <>
@@ -36,8 +38,9 @@ const Header = () => {
                   href="/dashboard"
                   className="text-gray-300 hover:text-white mr-4"
                 >
-                  Dashboard
+                  New NFT
                 </Link>
+
                 <Link
                   href="/profile"
                   className="text-gray-300 hover:text-white mr-4"
