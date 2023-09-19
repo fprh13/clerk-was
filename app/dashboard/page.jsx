@@ -31,7 +31,7 @@ const DashboardPage = () => {
         </p>
       <div>
         <Image className="text-2xl font-bold mb-1 py-10 px-8 fixed top-20 left-0 right-0 z-50" src="/images/list.png" alt="NFT" width={500} height={450} />
-        <Image src="/images/Tosil.png" alt="NFT" width={500} height={450} />
+        <Image src="/images/tosil.png" alt="NFT" width={500} height={450} />
         <Image src="/images/0.png" alt="NFT" width={500} height={450} />
         <Image src="/images/1.png" alt="NFT" width={500} height={450} />
         <Image src="/images/2.png" alt="NFT" width={500} height={450} />

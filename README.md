@@ -1,7 +1,7 @@
 # 프로젝트
 
 `Next.js`를 이용한 웹 애플리케이션 보안 과제 입니다. <br/><br/>
-`Vercel`를 사용해 배포중입니다.<br>
+`Vercel`를 사용해 배포중입니다.(https://clerk-was-psi.vercel.app)<br>
 
 # 📚 목차
 
