@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "title": "Open Sea",
+    "description": "Open Sea is a place where you can browse, buy, and sell NFTs.",
+    "link": "https://opensea.io",
+    "category": "NFT"
+  },
+  {
+    "id": 2,
+    "title": "Meta Mask",
+    "description": "MetaMask is a cryptocurrency wallet and browser extension for managing digital assets and interacting with Ethereum-based DApps.",
+    "link": "https://metaextentions.com",
+    "category": "NFT"
+  },
+  {
+    "id": 3,
+    "title": "Mintables",
+    "description": "Mintables is a site that simplifies the mass production of NFTs for free.",
+    "link": "https://www.mintables.club",
+    "category": "NFT"
+  },
+  {
+    "id": 4,
+    "title": "Pixieengine",
+    "description": "Pixieengine is a website that helps create pixel images for free",
+    "link": "https://pixieengine.com",
+    "category": "NFT"
+  },
+  {
+    "id": 5,
+    "title": "fprh13's GitHub",
+    "description": "This is fprh13's GitHub",
+    "link": "https://github.com/fprh13",
+    "category": "learn"
+  }
+]

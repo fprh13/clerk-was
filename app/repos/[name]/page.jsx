@@ -1,6 +1,7 @@
 import Repo from '@/components/Repo';
 import Link from 'next/link';
 import Header from '@/components/Header';
+import RepoDirs from '@/components/RepoDirs';
 import { Suspense } from 'react';
 
 const RepoPage = ({ params: { name } }) => {
@@ -27,6 +28,9 @@ const RepoPage = ({ params: { name } }) => {
       {/* <Suspense fallback={<div>Loading directories...</div>}> */}
       {/* <Repo name={name} /> */}
       {/* </Suspense> */}
+      <Suspense fallback={<div>Loading repo...</div>}>
+        <RepoDirs name={name} />
+      </Suspense>
     </div>
   );
 };

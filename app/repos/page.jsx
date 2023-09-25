@@ -1,6 +1,4 @@
 import Link from 'next/link';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer'; 
 import { FaStar, FaCodeBranch, FaEye } from 'react-icons/fa';
 
 async function fetchRepos() {
@@ -21,21 +19,16 @@ const ReposPage = async () => {
 
   return (
     <div>
-      <Header></Header>
       <h2 className="text-2xl font-bold mb-4">
         ✨ Github ID : {username}
-        <br/>
-        ➤ Clone,Fork 하실 때 Star 부탁 드립니다.
+        <br />➤ Clone,Fork 하실 때 Star 부탁 드립니다.
       </h2>
-
       <Link
         href="/"
         className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-4"
       >
-        Back to ➤ MainPage 
+        Back to ➤ MainPage
       </Link>
-
-
       <ul>
         {repos.map((repo) => (
           <li key={repo.id} className="bg-gray-100 m-4 p-4 rounded-md">
@@ -58,7 +51,6 @@ const ReposPage = async () => {
         ))}
       </ul>
       <div style={{ marginBottom: '100px' }}></div> {/* 여기에 여백을 추가 */}
-      <Footer />
     </div>
   );
 };

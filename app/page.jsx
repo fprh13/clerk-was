@@ -1,6 +1,4 @@
 import Link from 'next/link';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer'; 
 import Image from 'next/image';
 import { FaStar, FaCodeBranch, FaEye } from 'react-icons/fa';
 
@@ -21,40 +19,48 @@ const ReposPage = async () => {
   const repos = await fetchRepos();
 
   // "clerk-auth" 레포지토리만 필터링
-  const clerkAuthRepo = repos.find(repo => repo.name === 'clerk-was');
+  const clerkAuthRepo = repos.find((repo) => repo.name === 'clerk-was');
 
   return (
     <div>
-      <Header></Header>
       <h2 className="text-2xl font-bold text-center mb-4">
         ✨ Yeong-Mu's' NFT Site
-        <br/>
-        <br/>
-        <br/>
-        <Image className="text-2xl font-bold mb-1 py-10 px-8 fixed top-50 left-0 right-0 z-50"src="/images/me.png" alt="NFT" width={300} height={250} />
+        <br />
+        <br />
+        <br />
+        <Image
+          className="text-2xl font-bold mb-1 py-10 px-8 fixed top-50 left-0 right-0 z-50"
+          src="/images/me.png"
+          alt="NFT"
+          width={300}
+          height={250}
+        />
         "This is an NFT-related website.
-        <br/>
+        <br />
         You can check out the structure of this site on GitHub below.
-        <br/>
+        <br />
         Feel free to clone and fork, and if you do,
-        <br/>
+        <br />
         please hit the 'star' button and follow us."
-        <br/>
-        <br/>
-        <br/>
+        <br />
+        <br />
+        <br />
         "When you click on the GitHub ID at the bottom right,
-        <br/>
+        <br />
         you can view my entire repository.
-        <br/>
+        <br />
         Logged-in users can check out the newly released NFTs
-        <br/>
+        <br />
         and learn how to create NFTs for free."
-        <br/>
+        <br />
         <div style={{ marginBottom: '100px' }}></div> {/* 여기에 여백을 추가 */}
       </h2>
       <ul>
         {clerkAuthRepo && (
-          <li key={clerkAuthRepo.id} className="bg-blue-400 m-4 p-4 rounded-md hover:text-white mr-">
+          <li
+            key={clerkAuthRepo.id}
+            className="bg-blue-400 m-4 p-4 rounded-md hover:text-white mr-"
+          >
             <Link href={`/repos/${clerkAuthRepo.name}`}>
               <h3 className="text-xl font-bold">{clerkAuthRepo.name}</h3>
               <p>{clerkAuthRepo.description}</p>
@@ -74,7 +80,6 @@ const ReposPage = async () => {
         )}
       </ul>
       <div style={{ marginBottom: '100px' }}></div> {/* 여기에 여백을 추가 */}
-      <Footer />
     </div>
   );
 };
